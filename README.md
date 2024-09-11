@@ -14,7 +14,8 @@ It performs automatic cleanup based on lifetime.
 
 How to transfer data from the host to GPU?
 
-Contain data in host memory using Numpy e.g. host_data
+Contain data in host memory using Numpy e.g. `host_data`
+
 Transfer to GPU using `gpuarray.to_gpu(host_data)`
 
 After computation, retrieve data from GPU using `gpuarray.get()`

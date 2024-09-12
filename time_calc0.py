@@ -21,3 +21,10 @@ from_device = device_data_2x.get()
 print('total time to compute on GPU: %f'%(t2 - t1))
 
 print('Is the host computation the same as the GPU computation? : {}'.format(np.allclose(from_device, host_data_2x)))
+
+
+# IPython commands for code profiling
+# with open('time_calc0.py','r') as f:
+# 		time_calc_code = f.read()
+#
+# %prun -s cumulative exec(time_calc_code)
